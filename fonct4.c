@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include"fonction.h"
+#include <stdio.h>
+#include "fonction.h"
 
 int main()
 {
@@ -12,9 +12,6 @@ int main()
         }
     while ( jour<=0 || jour > 31 || mois<1 || mois>12 || a<=0);
 
-    int date=date_suivante(jour,mois,a);
-    if( date)
-
-        printf("Voici la date suivante: %d-%d-%d",jour,mois,a);
-        
+    date_suivante(jour,mois,a);
+    return 0;    
 }
